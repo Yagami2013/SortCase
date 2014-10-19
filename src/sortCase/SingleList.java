@@ -139,7 +139,6 @@ public class SingleList<T> implements LinkList<T> {
             return this;  
         }  
 
-[java] view plaincopy在CODE上查看代码片派生到我的代码片
 
 public void reverse3() {  
   Node<T> temp = this.head.next;  

@@ -1,14 +1,18 @@
 package sortCase;
 
-class Case {
+public class Case {
 	private String casename;
-	private String reliantCase;
-
+	private Case reliantCase;
+	public  Case() {}
+	public  Case(String name, Case rely) {
+		this.casename=name;
+		this.reliantCase=rely;
+	}
 	public String getName() {
 		return casename;
 	}
 
-	public String getRely() {
+	public Case getRely() {
 		return reliantCase;
 	}
 
@@ -16,7 +20,7 @@ class Case {
 		this.casename = name;
 	}
 
-	public void setRely(String rely) {
+	public void setRely(Case rely) {
 		this.reliantCase = rely;
 	}
 }
